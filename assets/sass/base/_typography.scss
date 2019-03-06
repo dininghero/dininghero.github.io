@@ -43,7 +43,7 @@
 	a {
 		@include vendor('transition', 'border-bottom-color #{_duration(transition)} ease-in-out');
 		text-decoration: none;
-		color: _palette(fg-bold);
+		color: _palette(bg);
 		border-bottom: dotted 1px;
 
 		&:hover {
@@ -65,8 +65,12 @@
 		margin: 0 0 _size(element-margin) 0;
 	}
 
+	header, footer {
+		color: _palette(bg);
+	}
+
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
+		color: _palette(bg);
 		font-family: _font(family-heading);
 		font-weight: _font(weight-heading-light);
 		letter-spacing: _font(kerning-heading);
@@ -81,9 +85,9 @@
 	}
 
 	h1 {
-		font-family: _font(family);
-		font-size: 5rem;
-		font-weight: _font(weight-extrabold);
+		font-family: _font(family-heading);
+		font-size: 4.4rem;
+		// font-weight: _font(weight-extrabold);
 		letter-spacing: _font(kerning-heading-alt);
 		line-height: 1.1;
 		margin: 0 0 (_size(element-margin) * 0.75) 0;
