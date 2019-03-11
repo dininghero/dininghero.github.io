@@ -20,6 +20,7 @@
 
 			.icon {
 				@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+				color: #000;
 				width: 2.25rem;
 				height: 2.25rem;
 				text-align: center;
