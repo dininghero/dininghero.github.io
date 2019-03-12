@@ -44,16 +44,12 @@
 		@include vendor('transition', 'border-bottom-color #{_duration(transition)} ease-in-out');
 		text-decoration: none;
 		color: _palette(bg);
-		border-bottom: dotted 1px;
+		// border-bottom: dotted 1px;
 
-		&:hover {
-			text-decoration: none;
-			border-bottom-color: transparent;
-		}
-	}
-
-	.space {
-		margin-top: 1.5rem;
+		// &:hover {
+		// 	text-decoration: none;
+		// 	border-bottom-color: transparent;
+		// }
 	}
 
 	strong, b {
@@ -71,6 +67,43 @@
 
 	header, footer {
 		color: _palette(bg);
+	}
+
+/* custom css */
+	.space-top-contact {
+		margin-top: 1.5rem;
+	}
+
+	.menu-span {
+		color: _palette(bg);
+		padding-right: 0.25rem;
+		padding-left: 0.25rem;
+	}
+
+	.menu-a-logo img {
+		width: 2.4rem;
+		vertical-align: middle;
+		padding-right: 0.40rem;
+	}
+
+	.menu-a-logo:hover {
+		border-bottom: dotted 1px;
+	}
+
+	.menu-a:hover {
+		border-bottom: dotted 1px;
+	}
+
+	.navbar {
+		position:fixed;
+		bottom:0;
+		background-color:#343434;
+		width:100%;
+		z-index:10;
+		padding-bottom: 0.75rem;
+		padding-left: 0.75rem;
+		padding-top: 0.75rem;
+		opacity: 0.9;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
